@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lab5';
+  
+  count:number = 0;
+  hide:boolean = true;
+
+  onClick(){
+    this.count++;
+  }
+
+  onDblClick(){
+    if(this.hide ===true){
+          this.hide = false;
+    }
+    else{
+      this.hide = true;
+    }
+  }
 }
